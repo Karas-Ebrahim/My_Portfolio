@@ -12,20 +12,6 @@ A dark, developer-console-inspired portfolio built with Next.js, React, TypeScri
 - Mouse-follow glow, hover states and scroll progress
 - Responsive mobile layout
 
-## Run locally
 
-```bash
-npm install
-npm run dev
-```
-
-Open `http://localhost:3000`.
-
-## Production
-
-```bash
-npm run build
-npm start
-```
 
 Deploy directly from GitHub to Vercel.
