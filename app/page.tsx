@@ -240,13 +240,28 @@ export default function Home(){
     <div className="progress" style={{width:`${scroll}%`}} />
 
     <nav className="nav">
-      <button className="brand" onClick={()=>jump("home")}><span className="brand-mark">K</span><span>Karas Ebrahim</span></button>
-      <div className={`nav-links ${mobileNav?"show":""}`}>
-        <button onClick={()=>jump("about")}>About</button><button onClick={()=>jump("stack")}>Stack</button><button onClick={()=>jump("projects")}>Projects</button><button onClick={()=>jump("playground")}>Playground</button><button onClick={()=>jump("contact")}>Contact</button>
-      </div>
-      <button className="talk" onClick={()=>jump("contact")}>Let&apos;s talk <span>↗</span></button>
-      <button className="mobile-menu" onClick={()=>setMobileNav(v=>!v)}><Menu size={19}/></button>
-    </nav>
+      <button className="brand" onClick={() => jump("home")}>
+        <img 
+        src="/icon.png" 
+        alt="Karas Ebrahim" 
+        className="brand-logo-img" 
+       />
+       <span>Karas Ebrahim</span>
+     </button>
+    <div className={`nav-links ${mobileNav ? "show" : ""}`}>
+      <button onClick={() => jump("about")}>About</button>
+      <button onClick={() => jump("stack")}>Stack</button>
+      <button onClick={() => jump("projects")}>Projects</button>
+      <button onClick={() => jump("playground")}>Playground</button>
+      <button onClick={() => jump("contact")}>Contact</button>
+    </div>
+    <button className="talk" onClick={() => jump("contact")}>
+      Let&apos;s talk <span>↗</span>
+    </button>
+    <button className="mobile-menu" onClick={() => setMobileNav((v) => !v)}>
+      <Menu size={19} />
+    </button>
+  </nav>
 
     <section id="home" className="hero section">
       <div className="hero-left">
